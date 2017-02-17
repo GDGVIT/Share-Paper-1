@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+              >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv1"
+                    android:text="Share paper"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:id="@+id/tv2"
+                    android:text="Question papers available"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+ <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+     android:layout_marginTop="20dp">
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/root_recyclerview_data">
+
+            </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal"
+
+        >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="269dp"
+        android:src="@drawable/nopic"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:id="@+id/noimage"
+        />
+</LinearLayout>
+</FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|end"
+        >
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:transitionName="trans"
+        app:borderWidth="0dp"
+        android:id="@+id/add_image"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/white"
+        />
+    </LinearLayout>
+
+</FrameLayout>

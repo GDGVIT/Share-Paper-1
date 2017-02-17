@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13MSE0254"
+                android:id="@+id/regno"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course code : "
+                        android:id="@+id/tv1"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SWE401"
+                        android:id="@+id/course_code"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slot : "
+                    android:id="@+id/tv2"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SWE401"
+                    android:id="@+id/slot"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Winter Semester , 2017"
+                android:id="@+id/sem"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                    android:layout_weight="70"
+                />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIEW THIS"
+                    android:visibility="gone"
+                    android:id="@+id/detail_btn"
+                    android:layout_weight="20"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/image_recycler_view">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

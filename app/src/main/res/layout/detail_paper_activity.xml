@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:weightSum="100"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to download all the papers"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:layout_weight="70"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/stat_sys_download_done"
+            android:tint="@android:color/white"
+            android:id="@+id/download"
+            android:layout_weight="30"
+            />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <in.myinnos.imagesliderwithswipeslibrary.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation="Stack"
+        custom:pager_animation_span="1100" />
+</FrameLayout>
+</LinearLayout>
